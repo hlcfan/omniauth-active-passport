@@ -5,6 +5,7 @@ module OAuth2
   class Client
     # Initializes an AccessToken by making a request to the token endpoint
     def get_token(params, access_token_opts={})
+      params = Authenticator.new(id, secret, options[:auth_scheme]).apply(params)
       opts = {:raise_errors => true, :parse => params.delete(:parse)}
       if options[:token_method] == :post
         opts[:body] = params
