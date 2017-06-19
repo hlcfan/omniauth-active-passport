@@ -2,11 +2,11 @@
 require File.expand_path('../lib/omniauth-active_passport/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "omniauth-active_passport"
+  s.name        = "omniauth-active-passport"
   s.version     = Omniauth::ActivePassport::VERSION
   s.authors     = ["Cesar Camacho"]
   s.email       = ["cesar.camacho@activenetwork.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/hlcfan/omniauth-active-passport"
   s.summary     = %q{Official OmniAuth strategy for Active Passport.}
   s.description = %q{Official OmniAuth strategy for Active Passport.}
 
